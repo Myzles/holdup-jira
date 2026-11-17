@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Holdup: Time in Status for Jira</title><meta name="description" content="Time in status, cycle time, lead time and stuck-work alerts for Jira Cloud. No setup, runs on Atlassian."><link rel="stylesheet" href="style.css"></head><body><main><nav><a href="index.html">Guide</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav>
+<h1>Holdup: Time in Status for Jira</h1>
+<p>Holdup shows how long Jira issues spend in each status, how long work takes from start to finish, and which issues have stopped moving. Install it and open a project. There is nothing to set up.</p>
+<h2>Where to find it</h2>
+<ul><li><strong>Project report:</strong> in any project, open the <em>Time in Status</em> tab (it may sit under <em>More</em>).</li>
+<li><strong>Issue sidebar:</strong> open an issue and expand <em>Time in Status</em> in the right-hand panel to see that issue's history.</li></ul>
+<h2>What the report shows</h2>
+<ul><li><strong>Cycle time:</strong> from the first time an issue enters an in-progress status to the last time it reaches done. The card shows the median and the time 85% of issues finish within.</li>
+<li><strong>Lead time:</strong> from creation to done. When Jira has a resolution date, that date is used.</li>
+<li><strong>Average time in each status:</strong> to-do statuses in grey, in-progress statuses in blue. The slowest in-progress status is named above the chart. Time after an issue is done is left out.</li>
+<li><strong>Stuck now:</strong> open issues sitting in the same in-progress status for longer than your threshold (5 days unless you change it).</li>
+<li><strong>Issues table:</strong> every issue with its current status, time in that status, cycle time, lead time and a column per status. Click a column to sort, click a key to open the issue.</li></ul>
+<h2>Filters</h2>
+<ul><li><strong>Issues:</strong> open or recently updated, finished in the period, or open only.</li>
+<li><strong>Period:</strong> 14 days to 2 years. <strong>Type:</strong> one issue type or all.</li>
+<li><strong>Extra JQL:</strong> anything Jira search accepts, for example <code>assignee = currentUser()</code> or <code>labels = backend</code>.</li>
+<li><strong>Skip weekends:</strong> leaves Saturdays and Sundays out of every duration, using your computer's time zone.</li>
+<li><strong>Show:</strong> mixed units (3d 4h), days or hours.</li></ul>
+<p>One report covers up to the 5,000 newest matching issues. If a project has more, the report says so and you can narrow the filters.</p>
+<h2>Export</h2>
+<p><strong>Export CSV</strong> downloads every row in the report, with durations as plain numbers in days (or hours if you picked hours), ready for Excel or Google Sheets.</p>
+<h2>Stuck-work emails</h2>
+<p>Project admins can open the <em>Alerts</em> tab, set the stuck threshold and switch on emails. Once a day Holdup looks for assigned issues in an in-progress status that haven't changed status for that many days, and asks Jira to email the assignee. Each issue is emailed at most once a week. Emails go through Jira's own notifications, so people only receive what Jira would normally send them.</p>
+<h2>Permissions</h2>
+<p>The report and sidebar read issues as the person looking at them, so nobody sees an issue they couldn't already open. Holdup cannot edit issues.</p>
+<footer>Holdup is made by Swag Studios. Not affiliated with Atlassian.</footer></main></body></html>
