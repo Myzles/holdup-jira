@@ -5,6 +5,7 @@
 <p><strong>Why is cycle time empty?</strong> Cycle time needs finished issues that passed through an in-progress status. If your workflow goes straight from To Do to Done, only lead time is shown.</p>
 <p><strong>Why don't the numbers match another tool?</strong> Check two things: Holdup counts calendar time unless <em>Skip weekends</em> is ticked, and it measures cycle time from the first in-progress status to the last time the issue reached done.</p>
 <p><strong>A status shows as a number.</strong> That status was deleted from Jira. Its time is still counted under the name it had in the issue history where possible.</p>
+<h3>I'm switching from another time-in-status app</h3><p>Holdup reads the same Jira history, so totals per status should match when the issues, period and weekend setting match. Differences usually come from business calendars and holidays (Holdup counts weekends and, from version 1.1, business hours, but not holidays) and from which statuses count as in progress. Export CSV from both and compare one issue.</p>
 <p><strong>I can't save alert settings.</strong> Only project admins can change them.</p>
 <p><strong>The report says it stopped at 5,000 issues.</strong> Use a shorter period, pick an issue type, or add extra JQL.</p>
 <footer>Holdup is made by Swag Studios. Not affiliated with Atlassian.</footer></main></body></html>

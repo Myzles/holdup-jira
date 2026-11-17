@@ -20,7 +20,10 @@
 <h2>Export</h2>
 <p><strong>Export CSV</strong> downloads every row in the report, with durations as plain numbers in days (or hours if you picked hours), ready for Excel or Google Sheets.</p>
 <h2>Stuck-work emails</h2>
-<p>Project admins can open the <em>Alerts</em> tab, set the stuck threshold and switch on emails. Once a day Holdup looks for assigned issues in an in-progress status that haven't changed status for that many days, and asks Jira to email the assignee. Each issue is emailed at most once a week. Emails go through Jira's own notifications, so people only receive what Jira would normally send them.</p>
+<p>Project admins can open the <em>Alerts</em> tab, set the stuck threshold and switch on emails. Once a day Holdup looks for assigned issues in an in-progress status that haven't changed status for that many days, and asks Jira to email the assignee. Each issue is emailed at most once a week. Emails go through Jira's own notifications, so people only receive what Jira would normally send them. Emails count calendar days and skip unassigned issues. The issue sidebar shows elapsed time and ignores the weekend setting in the report.</p>
 <h2>Permissions</h2>
 <p>The report and sidebar read issues as the person looking at them, so nobody sees an issue they couldn't already open. Holdup cannot edit issues.</p>
+<p>Scopes requested: read:jira-work (issues and history), read:jira-user (assignee names for display), storage:app (alert settings and the last email time per issue), send:notification:jira (the stuck-work email, sent by Jira). Nothing is sent to us or any outside service.</p>
+<h2>Pricing</h2>
+<p>Free for up to 10 users. Above that, billed by Atlassian per user per month: 11-100 users $0.30, 101-250 $0.25, 251-1,000 $0.15, 1,001+ $0.08. Annual billing is 10 times the monthly price. For example, a 50-user site pays 50 x $0.30 = $15 a month, or $150 a year. Atlassian's pricing tab shows the exact figure for your site.</p>
 <footer>Holdup is made by Swag Studios. Not affiliated with Atlassian.</footer></main></body></html>
